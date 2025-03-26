@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import './componentes/game-board'
+import Pipe from './componentes/game-board'
 
 function App() {
   return (
     <div className="App">
-      
+        <Pipe/>
     </div>
   );
 }
