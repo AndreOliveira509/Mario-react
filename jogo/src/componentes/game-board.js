@@ -22,7 +22,7 @@ export default function GameBoard() {
         if (!gameOver) {
             scoreInterval = setInterval(() => {
                 setScore((prevScore) => prevScore + 1);
-            }, 100);
+            }, 10);
         }
 
         const jump = () => {
@@ -65,7 +65,7 @@ export default function GameBoard() {
                                 marioRef.current.src = gameOverImg;
                                 marioRef.current.style.width = "75px";
                                 marioRef.current.style.marginLeft = "50px";
-
+ 
                                 setVidas(false);
                                 clearInterval(loop);
                             }
